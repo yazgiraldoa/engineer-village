@@ -6,11 +6,11 @@ import { ArrowRight, Code, Zap } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative py-24 px-6 md:px-12 overflow-hidden">
-      {/* Techy NYC Background Image */}
+      {/* NYC Skyline Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("https://images.unsplash.com/photo-1486256770668-32cd47092a9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2374&q=80")', 
+          backgroundImage: 'url("/lovable-uploads/6b84298e-8ffa-4a02-b3bf-3b4a02c42024.png")', 
           backgroundPosition: 'center',
         }}
       >
