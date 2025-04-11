@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Calendar, Building2, Clock, Zap, Code, Users, Coffee } from 'lucide-react';
+import { Calendar, Building2, Clock, Zap, Code, Users, Coffee, MessageSquare } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Benefits = () => {
@@ -61,6 +61,28 @@ const Benefits = () => {
                   </div>
                   <div className="bg-indigo-900/50 px-2 py-1 rounded text-xs text-indigo-300 flex items-center gap-1">
                     <Code size={12} /> <span>Tech Support</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-slate-800/50 border-none shadow-xl shadow-indigo-900/10 hover:shadow-indigo-600/20 transition-all group hover:translate-y-[-5px] backdrop-blur-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="flex items-center gap-2 text-indigo-200">
+                  <MessageSquare className="text-indigo-400 group-hover:text-indigo-300 transition-colors" size={20} />
+                  <span>Community Chat</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-blue-100/80">
+                  Join a WhatsApp group with other engineer founders
+                </p>
+                <div className="flex mt-3 gap-2">
+                  <div className="bg-indigo-900/50 px-2 py-1 rounded text-xs text-indigo-300 flex items-center gap-1">
+                    <Users size={12} /> <span>Network</span>
+                  </div>
+                  <div className="bg-indigo-900/50 px-2 py-1 rounded text-xs text-indigo-300 flex items-center gap-1">
+                    <MessageSquare size={12} /> <span>Communication</span>
                   </div>
                 </div>
               </CardContent>
