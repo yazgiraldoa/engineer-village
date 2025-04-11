@@ -12,7 +12,10 @@ const Hero = () => {
         style={{ 
           backgroundImage: 'url("/lovable-uploads/6b84298e-8ffa-4a02-b3bf-3b4a02c42024.png")', 
           backgroundPosition: 'center',
+          backgroundSize: 'cover',
         }}
+        aria-hidden="true"
+        loading="lazy"
       >
         {/* Dark gradient overlay with tech pattern */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-indigo-900/60"></div>
