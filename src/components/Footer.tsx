@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Code, Zap, Github, Twitter } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="py-10 px-6 md:px-12 bg-slate-900 text-white relative overflow-hidden">
+  return <footer className="py-10 px-6 md:px-12 bg-slate-900 text-white relative overflow-hidden">
       {/* Tech pattern background */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMjIiIGZpbGwtb3BhY2l0eT0iLjA1Ij48cGF0aCBkPSJNMzYgMzRoLTJ2LTRoMnY0em0tNCAwSDJ2LTRoMzB2NHptMCA0aC0ydjRoMnYtNHptLTQgMEgydjRoMzB2LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-10"></div>
       
@@ -20,20 +17,11 @@ const Footer = () => {
           </div>
           
           <div className="flex flex-col items-end">
-            <div className="flex gap-4 mb-2">
-              <a href="#" className="text-indigo-300 hover:text-white transition-colors">
-                <Github size={20} />
-              </a>
-              <a href="#" className="text-indigo-300 hover:text-white transition-colors">
-                <Twitter size={20} />
-              </a>
-            </div>
+            
             <p className="text-sm text-indigo-300/80">&copy; {new Date().getFullYear()} Engineering Village. All rights reserved.</p>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
