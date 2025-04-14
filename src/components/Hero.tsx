@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">Home</span> Feel stuck working on your startup solo?
+            Feel stuck working on your startup solo?
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl">
             Engineering Village is a community for any engineer in NYC about to go full time on working on their startup.
