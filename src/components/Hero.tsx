@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Code, Zap } from 'lucide-react';
+
 const Hero = () => {
   return <section className="relative py-24 px-6 md:px-12 overflow-hidden">
       {/* NYC Skyline Background Image */}
@@ -27,7 +28,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">Home</span> for engineers in NYC building startups
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">Home</span> Feel stuck working on your startup solo?
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl">
             Engineering Village is a community for any engineer in NYC about to go full time on working on their startup.
