@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Code, Zap, Github, Twitter } from 'lucide-react';
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <div className="flex items-center gap-2 mb-2">
               <Code className="text-indigo-400" size={20} />
-              <h2 className="text-xl font-bold">Engineering <span className="text-indigo-400">Village</span></h2>
+              <h2 className="text-xl font-bold">Engineer <span className="text-indigo-400">Village</span></h2>
               <Zap className="text-yellow-400" size={14} />
             </div>
             <p className="text-sm text-indigo-200">NYC's community for engineer founders</p>

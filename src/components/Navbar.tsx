@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -6,7 +7,7 @@ const Navbar = () => {
   return <nav className="py-4 px-6 md:px-12 flex justify-between items-center bg-slate-900/95 backdrop-blur-md sticky top-0 shadow-md z-50">
       <div className="flex items-center gap-2">
         <Code className="text-indigo-400" size={24} />
-        <h1 className="text-xl font-bold text-white">Engineering <span className="text-indigo-400">Village</span></h1>
+        <h1 className="text-xl font-bold text-white">Engineer <span className="text-indigo-400">Village</span></h1>
         <Zap className="text-yellow-400" size={16} />
       </div>
       <div>
