@@ -19,7 +19,7 @@ const Footer = () => {
           
           <div className="flex flex-col items-end">
             
-            <p className="text-sm text-indigo-300/80">&copy; {new Date().getFullYear()} Engineering Village. All rights reserved.</p>
+            <p className="text-sm text-indigo-300/80">&copy; {new Date().getFullYear()} Engineer Village. All rights reserved.</p>
           </div>
         </div>
       </div>
