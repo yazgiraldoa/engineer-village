@@ -20,9 +20,9 @@ const Hero = () => {
         <div className="animate-fade-up">
           {/* Tech Element */}
           <div className="flex items-center gap-2 mb-4 text-indigo-400">
-            <Code size={20} className="animate-pulse" />
-            <span className="text-sm font-mono tracking-wider">NYC.TECH.COMMUNITY</span>
-            <Zap size={20} className="text-yellow-400" />
+            
+            
+            
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
