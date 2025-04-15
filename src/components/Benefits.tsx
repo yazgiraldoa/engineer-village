@@ -53,7 +53,7 @@ const Benefits = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-blue-100/80">
-                  Open office hours (30 min) with Techstars team
+                Lunch office hours with founders-turned-investors who get it
                 </p>
                 <div className="flex mt-3 gap-2">
                   <div className="bg-indigo-900/50 px-2 py-1 rounded text-xs text-indigo-300 flex items-center gap-1">
