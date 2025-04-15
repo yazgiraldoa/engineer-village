@@ -38,9 +38,9 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Feel stuck working on your <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">startup</span> solo?
+          Early-stage <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">founder</span>? No office? We&apos;ve got a space for you
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl">Join a weekly founder co-working day with other engineering founders</p>
+          <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl">Join a weekly founder co-working day with other engineer founders</p>
           <Button className="bg-indigo-600 hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-600/20 text-lg px-8 py-6 group" asChild>
             <a href="https://airtable.com/app4khX3IgMNZTinP/pag6OUaSXYUHWqRbK/form" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               Apply Now <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
