@@ -31,7 +31,7 @@ const Benefits = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-blue-100/80">
-                  Techstars New York Office space to work with other engineer founders
+                  Office space to work with other engineer founders
                 </p>
                 <div className="flex mt-3 gap-2">
                   <div className="bg-indigo-900/50 px-2 py-1 rounded text-xs text-indigo-300 flex items-center gap-1">
