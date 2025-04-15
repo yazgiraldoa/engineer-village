@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="relative py-24 px-6 md:px-12 overflow-hidden">
       {/* NYC Skyline Background Image - Optimized */}
-      <div className="absolute inset-0 z-0 aspect-video">
+      <div className="absolute inset-0 z-0">
 
           <img 
             src="/lovable-uploads/6b84298e-8ffa-4a02-b3bf-3b4a02c42024.png" 
