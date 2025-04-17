@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <div className="flex items-center gap-2 mb-2">
               <Code className="text-indigo-400" size={20} />
-              <h2 className="text-xl font-bold">Engineer <span className="text-indigo-400">Village</span></h2>
+              <h2 className="text-xl font-bold">Techstars <span className="text-indigo-400">Engineer Village</span></h2>
               <Zap className="text-yellow-400" size={14} />
             </div>
             <p className="text-sm text-indigo-200">NYC's community for engineer founders</p>
@@ -19,7 +19,7 @@ const Footer = () => {
           
           <div className="flex flex-col items-end">
             
-            <p className="text-sm text-indigo-300/80">&copy; {new Date().getFullYear()} Engineer Village. All rights reserved.</p>
+            <p className="text-sm text-indigo-300/80">&copy; {new Date().getFullYear()} Techstars Engineer Village. All rights reserved.</p>
           </div>
         </div>
       </div>
