@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Calendar, Building2, Clock, Zap, Code, Users, Coffee, MessageSquare } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-
 const Benefits = () => {
-  return (
-    <section className="py-20 px-6 md:px-12 bg-techstars-white relative overflow-hidden">
+  return <section className="py-20 px-6 md:px-12 bg-techstars-white relative overflow-hidden">
       {/* Removed the tech pattern background div that was here */}
       
       <div className="max-w-4xl mx-auto relative z-10">
@@ -22,13 +19,13 @@ const Benefits = () => {
           
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="bg-techstars-white/50 border-none shadow-xl shadow-techstars-slate/10 hover:shadow-techstars-phosphor/20 transition-all group hover:translate-y-[-5px] backdrop-blur-sm">
-              <CardHeader className="pb-2">
+              <CardHeader className="pb-2 bg-slate-200">
                 <CardTitle className="flex items-center gap-2 text-techstars-slate">
                   <Building2 className="text-techstars-phosphor group-hover:text-techstars-phosphor/80 transition-colors" size={20} />
                   <span>Workspace Access</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="bg-slate-200">
                 <p className="text-techstars-black/80">
                   Office Space every Wednesday (with phone booths and meeting rooms)
                 </p>
@@ -44,13 +41,13 @@ const Benefits = () => {
             </Card>
             
             <Card className="bg-techstars-white/50 border-none shadow-xl shadow-techstars-slate/10 hover:shadow-techstars-phosphor/20 transition-all group hover:translate-y-[-5px] backdrop-blur-sm">
-              <CardHeader className="pb-2">
+              <CardHeader className="pb-2 bg-slate-200">
                 <CardTitle className="flex items-center gap-2 text-techstars-slate">
                   <Clock className="text-techstars-phosphor group-hover:text-techstars-phosphor/80 transition-colors" size={20} />
                   <span>Expert Guidance</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="bg-slate-200">
                 <p className="text-techstars-black/80">
                 Lunch office hours with founders-turned-investors who get it
                 </p>
@@ -66,13 +63,13 @@ const Benefits = () => {
             </Card>
             
             <Card className="bg-techstars-white/50 border-none shadow-xl shadow-techstars-slate/10 hover:shadow-techstars-phosphor/20 transition-all group hover:translate-y-[-5px] backdrop-blur-sm">
-              <CardHeader className="pb-2">
+              <CardHeader className="pb-2 bg-slate-200">
                 <CardTitle className="flex items-center gap-2 text-techstars-slate">
                   <MessageSquare className="text-techstars-phosphor group-hover:text-techstars-phosphor/80 transition-colors" size={20} />
                   <span>Community Chat</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="bg-slate-200">
                 <p className="text-techstars-black/80">
                   Join a WhatsApp group with other engineer founders
                 </p>
@@ -90,18 +87,11 @@ const Benefits = () => {
         </div>
         
         <div className="text-center">
-          <a 
-            href="https://airtable.com/app4khX3IgMNZTinP/pag6OUaSXYUHWqRbK/form" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block bg-techstars-phosphor hover:bg-techstars-phosphor/90 text-techstars-black font-semibold py-3 px-8 rounded-md transition-all shadow-lg shadow-techstars-phosphor/20 hover:translate-y-[-2px]"
-          >
+          <a href="https://airtable.com/app4khX3IgMNZTinP/pag6OUaSXYUHWqRbK/form" target="_blank" rel="noopener noreferrer" className="inline-block bg-techstars-phosphor hover:bg-techstars-phosphor/90 text-techstars-black font-semibold py-3 px-8 rounded-md transition-all shadow-lg shadow-techstars-phosphor/20 hover:translate-y-[-2px]">
             Join the Village
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Benefits;
