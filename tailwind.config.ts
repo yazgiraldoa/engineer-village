@@ -59,6 +59,12 @@ export default {
 					gray: '#F1F5F9',
 					darkGray: '#334155'
 				},
+				techstars: {
+					phosphor: '#39C463',
+					slate: '#8298AB',
+					black: '#000000',
+					white: '#FFFFFF'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -111,3 +117,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
