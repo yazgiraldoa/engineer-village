@@ -98,7 +98,8 @@ const Companies = () => {
         </div>
         
         {/* Hide scrollbar from all browsers */}
-        <style jsx>{`
+        <style>
+          {`
           /* Hide scrollbar for Chrome, Safari and Opera */
           .scrollbar-hide::-webkit-scrollbar {
             display: none;
@@ -109,7 +110,8 @@ const Companies = () => {
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
           }
-        `}</style>
+        `}
+        </style>
       </div>
     </section>
   );
