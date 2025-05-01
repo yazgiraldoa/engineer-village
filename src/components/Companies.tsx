@@ -1,57 +1,32 @@
-
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
+import { InfiniteSlider } from './ui/infinite-slider';
+
+import type { SVGProps } from "react";
+
 
 type CompanyData = {
   name: string;
-  logoClass: string; // Using text as logos for simplicity
+  icon?: React.ComponentType<SVGProps<SVGSVGElement>>;
 };
 
 const companies: CompanyData[] = [
-  { name: 'Coinbase', logoClass: 'bg-white/5' },
-  { name: 'Doordash', logoClass: 'bg-white/5' },
-  { name: 'Protocol Labs', logoClass: 'bg-white/5' },
-  { name: 'Amazon', logoClass: 'bg-white/5' },
-  { name: 'Meta', logoClass: 'bg-white/5' },
-  { name: 'Moonhub', logoClass: 'bg-white/5' },
-  { name: 'Palantir', logoClass: 'bg-white/5' },
-  { name: 'Square', logoClass: 'bg-white/5' },
-  { name: 'Pinwheel', logoClass: 'bg-white/5' },
-  { name: 'Google', logoClass: 'bg-white/5' },
-  { name: 'Apple', logoClass: 'bg-white/5' },
-  { name: 'Asana', logoClass: 'bg-white/5' },
-  { name: 'Oracle', logoClass: 'bg-white/5' },
+  { name: 'Coinbase' },
+  { name: 'Doordash' },
+  { name: 'Protocol Labs' },
+  { name: 'Amazon' },
+  { name: 'Meta' },
+  { name: 'Moonhub' },
+  { name: 'Palantir' },
+  { name: 'Square' },
+  { name: 'Pinwheel' },
+  { name: 'Google' },
+  { name: 'Apple' },
+  { name: 'Asana' },
+  { name: 'Oracle' },
 ];
 
-// Duplicate companies for continuous scrolling effect
-const scrollingCompanies = [...companies, ...companies];
-
 const Companies = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
-    
-    // Calculate the scroll animation
-    const animateScroll = () => {
-      if (!scrollContainer) return;
-      
-      // When halfway through the original items, reset to beginning without visual jump
-      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-        scrollContainer.scrollLeft = 0;
-      } else {
-        scrollContainer.scrollLeft += 1; // Slow scroll speed
-      }
-    };
-    
-    // Set interval for smooth scrolling effect
-    const scrollInterval = setInterval(animateScroll, 30);
-    
-    return () => {
-      clearInterval(scrollInterval);
-    };
-  }, []);
 
   return (
     <section className="py-16 px-6 md:px-12 bg-techstars-black relative overflow-hidden">
@@ -65,33 +40,17 @@ const Companies = () => {
           {/* Left gradient mask */}
           <div className="absolute left-0 top-0 h-full w-16 z-10 bg-gradient-to-r from-techstars-black to-transparent" />
           
-          {/* Scrolling content */}
-          <div 
-            ref={scrollRef}
-            className="flex overflow-x-auto scrollbar-hide gap-4 py-2"
-            style={{ 
-              scrollbarWidth: 'none', 
-              msOverflowStyle: 'none',
-              WebkitOverflowScrolling: 'touch',
-              scrollBehavior: 'smooth'
-            }}
-          >
-            {scrollingCompanies.map((company, index) => (
-              <div 
-                key={index} 
-                className="flex-none w-40" // Fixed width for each item
-              >
-                <div 
-                  className={cn(
-                    "h-24 flex items-center justify-center rounded-lg border border-techstars-slate/20", 
-                    company.logoClass
-                  )}
-                >
-                  <span className="font-semibold text-techstars-white/90">{company.name}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+
+    <InfiniteSlider gap={8} speed={40}>
+      {companies.map((company) => (
+        <div key={company.name} className="flex items-center justify-center h-24 flex items-center px-10 rounded-lg border border-techstars-slate/20">
+          {company.icon && <company.icon className="w-12 h-12" />}
+          <span className="text-techstars-white">{company.name}</span>
+        </div>
+      ))}
+    </InfiniteSlider>
+
+
           
           {/* Right gradient mask */}
           <div className="absolute right-0 top-0 h-full w-16 z-10 bg-gradient-to-l from-techstars-black to-transparent" />
