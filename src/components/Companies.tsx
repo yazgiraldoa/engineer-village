@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils';
 import { InfiniteSlider } from './ui/infinite-slider';
 
 import type { SVGProps } from "react";
+import { AmazonLogo, CoinbaseLogo, DoordashLogo, ProtocolLabsLogo, MetaLogo, PalantirLogo, SquareLogo, PinwheelLogo, GoogleLogo, AppleLogo, AsanaLogo, OracleLogo } from './ui/brand-logos';
 
 
 type CompanyData = {
@@ -11,19 +12,18 @@ type CompanyData = {
 };
 
 const companies: CompanyData[] = [
-  { name: 'Coinbase' },
-  { name: 'Doordash' },
-  { name: 'Protocol Labs' },
-  { name: 'Amazon' },
-  { name: 'Meta' },
-  { name: 'Moonhub' },
-  { name: 'Palantir' },
-  { name: 'Square' },
-  { name: 'Pinwheel' },
-  { name: 'Google' },
-  { name: 'Apple' },
-  { name: 'Asana' },
-  { name: 'Oracle' },
+  { name: 'Coinbase', icon: CoinbaseLogo },
+  { name: 'Doordash', icon: DoordashLogo },
+  { name: 'Protocol Labs', icon: ProtocolLabsLogo },
+  { name: 'Amazon', icon: AmazonLogo },
+  { name: 'Meta', icon: MetaLogo },
+  { name: 'Palantir', icon: PalantirLogo },
+  { name: 'Square', icon: SquareLogo },
+  { name: 'Pinwheel', icon: PinwheelLogo },
+  { name: 'Google', icon: GoogleLogo },
+  { name: 'Apple', icon: AppleLogo },
+  { name: 'Asana', icon: AsanaLogo },
+  { name: 'Oracle', icon: OracleLogo },
 ];
 
 const Companies = () => {
@@ -43,9 +43,8 @@ const Companies = () => {
 
     <InfiniteSlider gap={8} speed={40}>
       {companies.map((company) => (
-        <div key={company.name} className="flex items-center justify-center h-24 flex items-center px-10 rounded-lg border border-techstars-slate/20">
+        <div key={company.name} title={company.name} className="flex items-center justify-center h-24 flex items-center px-4 rounded-lg border border-techstars-slate/20">
           {company.icon && <company.icon className="w-12 h-12" />}
-          <span className="text-techstars-white">{company.name}</span>
         </div>
       ))}
     </InfiniteSlider>
