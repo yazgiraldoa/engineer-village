@@ -34,9 +34,9 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-techstars-white mb-6 leading-tight">
-          The home base for top <span className="bg-clip-text text-transparent bg-gradient-to-r from-techstars-phosphor to-techstars-slate">engineer founders</span> in (or visiting) NYC
+          The home base for top <span className="bg-clip-text text-transparent bg-gradient-to-r from-techstars-phosphor to-techstars-slate">engineer founders</span> in NYC
           </h1>
-          <p className="text-xl md:text-2xl text-techstars-slate mb-10 max-w-3xl">Join a weekly co-working day with other engineer founders and engineers looking to join an early stage startup</p>
+          <p className="text-xl md:text-2xl text-techstars-slate mb-10 max-w-3xl">Join a weekly co-working day with top technical founders and engineers exploring early-stage startups. Whether you're based in NYC or just visiting, Engineer Village is where builders plug in.</p>
           <Button className="bg-techstars-phosphor hover:bg-techstars-phosphor/80 transition-all shadow-lg shadow-techstars-phosphor/20 text-lg px-8 py-6 group" asChild>
             <a href="https://airtable.com/app4khX3IgMNZTinP/pag6OUaSXYUHWqRbK/form" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               Apply Now <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
