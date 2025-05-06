@@ -14,7 +14,7 @@ const Footer = () => {
               <h2 className="text-xl font-bold">Techstars <span className="text-techstars-phosphor">Engineer Village</span></h2>
               <Zap className="text-techstars-slate" size={14} />
             </div>
-            <p className="text-sm text-techstars-slate">NYC's community for engineer founders</p>
+            <p className="text-sm text-techstars-slate">NYC’s Home for Engineer Founders</p>
           </div>
           
           <div className="flex flex-col items-end">
