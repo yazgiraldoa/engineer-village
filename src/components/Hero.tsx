@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-techstars-white mb-6 leading-tight">
-          Engineer <span className="bg-clip-text text-transparent bg-gradient-to-r from-techstars-phosphor to-techstars-slate">founder</span> with no office? We&apos;ve got a home for you
+          The home base for top <span className="bg-clip-text text-transparent bg-gradient-to-r from-techstars-phosphor to-techstars-slate">engineer founders</span> in (or visiting) NYC
           </h1>
           <p className="text-xl md:text-2xl text-techstars-slate mb-10 max-w-3xl">Join a weekly co-working day with other engineer founders and engineers looking to join an early stage startup</p>
           <Button className="bg-techstars-phosphor hover:bg-techstars-phosphor/80 transition-all shadow-lg shadow-techstars-phosphor/20 text-lg px-8 py-6 group" asChild>
