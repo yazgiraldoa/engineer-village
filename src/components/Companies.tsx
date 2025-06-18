@@ -54,6 +54,20 @@ const Companies = () => {
           {/* Right gradient mask */}
           <div className="absolute right-0 top-0 h-full w-16 z-10 bg-gradient-to-l from-techstars-black to-transparent" />
         </div>
+
+   
+        {/* Credit */}
+        <div className="absolute bottom-4 right-4 z-20">
+          Founded by 
+          <a 
+            href="https://www.linkedin.com/in/christineluhong/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-xs text-slate-400 hover:text-slate-300 transition-colors duration-200 opacity-70 hover:opacity-100"
+          >
+            Christine Lu Hong
+          </a>
+        </div>
         
         {/* Hide scrollbar from all browsers */}
         <style>
