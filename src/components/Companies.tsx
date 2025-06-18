@@ -58,7 +58,7 @@ const Companies = () => {
    
      {/* Credit */}
         <div className="py-16 px-6 md:px-12 bg-techstars-black relative overflow-hidden text-sm text-slate-400 hover:text-slate-300 transition-colors duration-200 "> 
-           Founded by 
+           Founded by {' '}
           <a 
             href="https://www.linkedin.com/in/christineluhong/" 
             target="_blank" 
