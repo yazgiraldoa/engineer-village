@@ -57,7 +57,7 @@ const Companies = () => {
 
    
      {/* Credit */}
-        <div className="absolute bottom-4 right-4 z-20">
+        <div className="absolute bottom-4 right-4 z-20 pb-12"> 
           <a 
             href="https://www.linkedin.com/in/christineluhong/" 
             target="_blank" 
